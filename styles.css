@@ -1,0 +1,67 @@
+/* Estilos Generales */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(imagenes/pexels-fwstudio-163999.jpg) no-repeat center center/
+    cover;
+}
+
+/* Contenedor Principal*/
+
+.contenedorPrincipal {
+  width: 80vw;
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.contenedorBotones {
+  padding: 20px;
+}
+
+/* Cronómetro */
+
+#cronometro {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+  user-select: none;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+/* Botones */
+
+.boton {
+  width: 80px;
+  height: 80px;
+  font-size: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#botonInicioPausa.iniciar,
+#botonInicioPausa.iniciar i {
+  background-color: #08e008;
+}
+
+#botonInicioPausa.pausar,
+#botonInicioPausa.pausar i {
+  background-color: #ffdc00;
+}
+
+#botonReiniciar {
+  background-color: red;
+}

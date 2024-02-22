@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos de BS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Estilos y Favicon -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="imagenes/cronometro.png" type="image" />
+    <title>Mi Cronómetro</title>
+  </head>
+  <body>
+    <main class="contenedorPrincipal">
+      <div class="contenedorInterno">
+        <div id="cronometro">00:00:00</div>
+        <div class="contenedorBotones">
+          <button id="botonInicioPausa" class="boton iniciar">
+            <i class="bi bi-play-fill"></i>
+          </button>
+          <button id="botonReiniciar" class="boton">
+            <i class="bi bi-arrow-counterclockwise"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
