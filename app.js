@@ -20,9 +20,9 @@ function actualizarCronometro(){
     }
   }
 
-  const segundosConFormato
+  const segundosConFormato = 
   const minutosConFormato
-  const horassConFormato
+  const horasConFormato
 
 }
 
