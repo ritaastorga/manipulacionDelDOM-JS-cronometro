@@ -30,3 +30,16 @@ function actualizarCronometro() {
 function asignarFormato(unidadDeTiempo) {
   return unidadDeTiempo < 10 ? "0" + unidadDeTiempo : unidadDeTiempo;
 }
+
+botonInicioPausa.addEventListener("click", function () {
+  if (estadoCronometro === "pausado") {
+    intervaloDeTiempo = window.setInterval(actualizarCronometro, 1000);
+    botonInicioPausa.innerHTML = '<i class="bi bi-pause-fill"></i>';
+    botonInicioPausa.classList.remove("pausar");
+    estadoCronometro = "corriendo";
+  } else {
+    window.clearInterval(intervaloDeTiempo);
+    botonInicioPausa.innerHTML = '<i class="bi bi-play-fill"></i>';
+    botonInicioPausa.classList.remove("pausar");
+  }
+});
